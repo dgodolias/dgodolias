@@ -192,7 +192,7 @@
   </g>
   <g class="item" style="animation-delay:2.98s">
     <line x1="60" y1="450" x2="1262" y2="450" stroke="#8b949e" stroke-width="1" opacity=".3"/>
-    <text class="foot" x="60" y="472"><tspan class="foot-hi">33</tspan> public repos<tspan opacity=".5">  &#183;  </tspan><tspan class="foot-hi">810</tspan> contributions in the last year<tspan opacity=".5">  &#183;  </tspan>on GitHub since <tspan class="foot-hi">2020</tspan></text>
+    <text class="foot" x="60" y="472"><tspan class="foot-hi">33</tspan> public repos<tspan opacity=".5">  &#183;  </tspan><tspan class="foot-hi">812</tspan> contributions in the last year<tspan opacity=".5">  &#183;  </tspan>on GitHub since <tspan class="foot-hi">2020</tspan></text>
     <text class="foot" x="1262" y="472" text-anchor="end">no third-party trackers &#183; rendered from this repo</text>
   </g>
 </svg>
