@@ -1,4 +1,8 @@
 <p align="center">
+  <img src="./assets/contributions.svg" alt="Contribution graph for dgodolias" width="100%">
+</p>
+
+<p align="center">
   <a href="https://dimosthenisgkontolias.com/">
     <img src="./assets/profile-terminal.svg" alt="Terminal profile card for dgodolias" width="100%">
   </a>
@@ -46,7 +50,18 @@ unattended, and interfaces that stay simple while the system underneath does not
 
 ---
 
-<sub>
-Both cards above are plain SVG generated from real GitHub data and committed to this repo —
-no third-party badge services, so nothing here can rate-limit, break, or track you.
-</sub>
+<details>
+<summary><sub>How these cards are made</sub></summary>
+
+<br>
+
+All three cards are plain SVG, generated from the GitHub GraphQL API by
+[`scripts/`](./scripts) and committed to this repo. A daily
+[workflow](./.github/workflows/refresh-cards.yml) re-runs the generators so the
+contribution graph and the counts stay current on their own.
+
+No third-party badge or stats services are involved, so nothing here can rate-limit,
+break, or track whoever is reading the page. The animation is CSS and SMIL inside the
+SVG, and it collapses to a static card for anyone browsing with reduced motion enabled.
+
+</details>

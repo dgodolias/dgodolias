@@ -1,6 +1,6 @@
 <svg width="1320" height="720" viewBox="0 0 1320 720" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">dgodolias terminal profile README</title>
-  <desc id="desc">An animated neofetch-style GitHub profile card with ASCII art and profile details for Dimosthenis Gkontolias.</desc>
+  <desc id="desc">An animated neofetch-style GitHub profile card for Dimosthenis Gkontolias.</desc>
   <style>
     .mono, .caption, .ascii, .handle, .prompt, .cmd, .foot, .foot-hi {
       font-family: "Cascadia Mono", "Consolas", "SF Mono", "Liberation Mono", "DejaVu Sans Mono", monospace;
@@ -124,14 +124,14 @@
     <text class="row" x="0" y="370" style="animation-delay:2.935s"><tspan class="key">Contact.LinkedIn</tspan><tspan class="dots"> .............. </tspan><tspan class="value">dimosthenisgkontolias</tspan></text>
     <text class="row" x="0" y="394" style="animation-delay:3.02s"><tspan class="key">Contact.Email</tspan><tspan class="dots"> ................. </tspan><tspan class="value">dimosthenisgkontolias@gmail.com</tspan></text>
     <text class="row" x="0" y="436" style="animation-delay:3.105s"><tspan class="key">GitHub.Repos</tspan><tspan class="dots"> .................. </tspan><tspan class="value">33 public non-fork repos</tspan></text>
-    <text class="row" x="0" y="460" style="animation-delay:3.19s"><tspan class="key">GitHub.Contributions</tspan><tspan class="dots"> .......... </tspan><tspan class="value">1,956 in the last year</tspan></text>
-    <text class="row" x="0" y="484" style="animation-delay:3.275s"><tspan class="key">GitHub.Featured</tspan><tspan class="dots"> ............... </tspan><tspan class="value">QuaR, QIF, QR Studio, demosvibes</tspan></text>
+    <text class="row" x="0" y="460" style="animation-delay:3.19s"><tspan class="key">GitHub.Contributions</tspan><tspan class="dots"> .......... </tspan><tspan class="value">1,957 in the last year</tspan></text>
+    <text class="row" x="0" y="484" style="animation-delay:3.275s"><tspan class="key">GitHub.Featured</tspan><tspan class="dots"> ............... </tspan><tspan class="value">QuaR, demosvibes, QR Studio, BoomAI</tspan></text>
   </g>
 
   <g class="an-foot">
     <line class="rule" x1="60" y1="650" x2="1260" y2="650" opacity=".35"/>
     <circle class="live" cx="66" cy="672" r="4.5" fill="#3fb950"/>
-    <text class="foot" x="80" y="676">open to work<tspan class="foot" opacity=".5">  ·  </tspan><tspan class="foot-hi">main</tspan><tspan class="foot" opacity=".5">  ·  </tspan>built with too much coffee</text>
+    <text class="foot" x="80" y="676">open to work<tspan class="foot" opacity=".5">  &#183;  </tspan><tspan class="foot-hi">main</tspan><tspan class="foot" opacity=".5">  &#183;  </tspan>built with too much coffee</text>
     <text class="foot-hi" x="1260" y="676" text-anchor="end">dimosthenisgkontolias.com</text>
   </g>
 </svg>
