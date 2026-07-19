@@ -40,8 +40,20 @@ T_GRID = 1.45
 W_STEP, D_STEP = 0.009, 0.003
 T_SNAKE = 2.65
 PERIOD = 19.0            # one full lap of the grid
-SNAKE = [("#39d353", 1.00), ("#2ea043", 0.94), ("#26a641", 0.88),
-         ("#1a7f37", 0.80), ("#0e4429", 0.72)]
+
+# The snake starts short and grows as it eats. A cell is worth its contribution
+# level, so a dark-green day feeds the snake four times as much as a faint one.
+SEG_MIN, SEG_MAX = 4, 42
+FOOD = {"NONE": 0, "FIRST_QUARTILE": 1, "SECOND_QUARTILE": 2,
+        "THIRD_QUARTILE": 3, "FOURTH_QUARTILE": 4}
+HEAD_RGB, TAIL_RGB = (0x39, 0xd3, 0x53), (0x0e, 0x44, 0x29)
+
+
+def seg_color(t):
+    """Blend head colour into tail colour along the body."""
+    return "#%02x%02x%02x" % tuple(
+        round(h + (tl - h) * t) for h, tl in zip(HEAD_RGB, TAIL_RGB)
+    )
 
 def esc(s):
     return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
@@ -53,6 +65,11 @@ def cy(wd):
     return round(GRID_Y + wd * PITCH + CELL / 2, 1)
 
 # ---- serpentine path over every cell, column by column ------------------
+level_at = {}
+for wi, wk in enumerate(weeks):
+    for day in wk["contributionDays"]:
+        level_at[(wi, day["weekday"])] = day["contributionLevel"]
+
 order, pts = [], []
 for wi in range(len(weeks)):
     days = range(7) if wi % 2 == 0 else range(6, -1, -1)
@@ -62,6 +79,20 @@ for wi in range(len(weeks)):
 STEPS = len(pts)
 step_at = {wd_wi: i for i, wd_wi in enumerate(order)}
 DT = PERIOD / STEPS
+
+# Cumulative food eaten after each step, normalised so the snake reaches exactly
+# SEG_MAX at the end of the lap however dense the year happened to be.
+eaten, run = [], 0
+for wi, wd in order:
+    run += FOOD.get(level_at.get((wi, wd), "NONE"), 0)
+    eaten.append(run)
+total_food = eaten[-1] or 1
+# grow_at[i] = fraction of the lap at which body segment i appears
+grow_at = []
+for i in range(SEG_MIN, SEG_MAX):
+    need = (i - SEG_MIN + 1) / (SEG_MAX - SEG_MIN) * total_food
+    step = next((k for k, v in enumerate(eaten) if v >= need), STEPS - 1)
+    grow_at.append(round(step / STEPS, 5))
 
 out = io.StringIO()
 w = out.write
@@ -99,7 +130,7 @@ w('''  <style>
     .caret    { opacity: 0; animation: blink 1.06s step-end 1.42s infinite; }
     /* Revealed only once every segment's motion has begun, so none of them are
        caught sitting at the SVG origin waiting for their turn. */
-    .snake    { opacity: 0; animation: fadeIn .4s ease-out ''' + f"{round(T_SNAKE + (len(SNAKE) - 1) * DT, 4)}s" + ''' forwards; }
+    .snake    { opacity: 0; animation: fadeIn .4s ease-out ''' + f"{round(T_SNAKE + (SEG_MIN - 1) * DT, 4)}s" + ''' forwards; }
 
     /* A static, readable card for anyone who asked the OS for less motion. */
     @media (prefers-reduced-motion: reduce) {
@@ -191,14 +222,24 @@ w('  </g>\n\n')
 
 # ---- the snake ----------------------------------------------------------
 w('  <g class="snake">\n')
-for i, (color, scale) in enumerate(SNAKE):
-    s = round(CELL * scale, 2)
+for i in range(SEG_MAX):
+    t = i / (SEG_MAX - 1)
+    s = round(CELL * (1.0 - 0.45 * t), 2)
     half = round(s / 2, 2)
     extra = ' filter="url(#glow)"' if i == 0 else ""
     # No transform attribute here: animateMotion contributes its own transform,
     # and a static translate would stack on top of it and push the snake off-grid.
     w(f'    <rect x="{-half}" y="{-half}" width="{s}" height="{s}" rx="{round(s * 0.3, 2)}" '
-      f'fill="{color}"{extra}>\n')
+      f'fill="{seg_color(t)}"{extra}')
+    if i >= SEG_MIN:
+        # This segment only exists once the snake has eaten enough to earn it.
+        f = grow_at[i - SEG_MIN]
+        w(f' opacity="0">\n')
+        w(f'      <animate attributeName="opacity" dur="{PERIOD}s" begin="{T_SNAKE}s" '
+          f'repeatCount="indefinite" calcMode="discrete" values="0;1;1;0" '
+          f'keyTimes="0;{f};0.995;1"/>\n')
+    else:
+        w('>\n')
     w(f'      <animateMotion dur="{PERIOD}s" begin="{round(T_SNAKE + i * DT, 4)}s" '
       f'repeatCount="indefinite" rotate="0">\n')
     w('        <mpath xlink:href="#snakepath" href="#snakepath"/>\n')
