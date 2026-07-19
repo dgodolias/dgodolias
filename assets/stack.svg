@@ -237,7 +237,7 @@
   </g>
   <g class="item" style="animation-delay:3.49s">
     <line x1="60" y1="512" x2="1262" y2="512" stroke="#8b949e" stroke-width="1" opacity=".3"/>
-    <text class="foot" x="60" y="534"><tspan class="foot-hi">33</tspan> public repos<tspan opacity=".5">  &#183;  </tspan><tspan class="foot-hi">1,964</tspan> contributions in the last year<tspan opacity=".5">  &#183;  </tspan>skills mirrored from <tspan class="foot-hi">dimosthenisgkontolias.com</tspan></text>
+    <text class="foot" x="60" y="534"><tspan class="foot-hi">33</tspan> public repos<tspan opacity=".5">  &#183;  </tspan><tspan class="foot-hi">813</tspan> contributions in the last year<tspan opacity=".5">  &#183;  </tspan>skills mirrored from <tspan class="foot-hi">dimosthenisgkontolias.com</tspan></text>
     <text class="foot" x="1262" y="534" text-anchor="end">no third-party trackers</text>
   </g>
 </svg>
