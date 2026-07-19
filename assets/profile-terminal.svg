@@ -110,22 +110,22 @@
   <g class="mono" transform="translate(645 142)">
     <text class="handle row" x="0" y="0" style="animation-delay:1.82s">dimosthenis@github</text>
     <line class="rule row" x1="0" y1="18" x2="610" y2="18" style="animation-delay:1.91s"/>
-    <text class="row" x="0" y="52" style="animation-delay:2.0s"><tspan class="key">OS</tspan><tspan class="dots"> ............................ </tspan><tspan class="value">Windows, Android, Linux</tspan></text>
+    <text class="row" x="0" y="52" style="animation-delay:2.0s"><tspan class="key">Location</tspan><tspan class="dots"> ...................... </tspan><tspan class="value">Athens, Greece</tspan></text>
     <text class="row" x="0" y="76" style="animation-delay:2.085s"><tspan class="key">Uptime</tspan><tspan class="dots"> ........................ </tspan><tspan class="value">GitHub since Jul 2020</tspan></text>
-    <text class="row" x="0" y="100" style="animation-delay:2.17s"><tspan class="key">Host</tspan><tspan class="dots"> .......................... </tspan><tspan class="value">AUEB Informatics + indie builds</tspan></text>
-    <text class="row" x="0" y="124" style="animation-delay:2.255s"><tspan class="key">Shell</tspan><tspan class="dots"> ......................... </tspan><tspan class="value">PowerShell, Bash</tspan></text>
-    <text class="row" x="0" y="148" style="animation-delay:2.34s"><tspan class="key">IDE</tspan><tspan class="dots"> ........................... </tspan><tspan class="value">Cursor, Claude Code, VS Code</tspan></text>
-    <text class="row" x="0" y="190" style="animation-delay:2.425s"><tspan class="key">Languages.Programming</tspan><tspan class="dots"> ......... </tspan><tspan class="value">Python, TypeScript, Java, C#, SQL</tspan></text>
-    <text class="row" x="0" y="214" style="animation-delay:2.51s"><tspan class="key">Languages.Web</tspan><tspan class="dots"> ................. </tspan><tspan class="value">React, Next.js, Tailwind, HTML/CSS</tspan></text>
-    <text class="row" x="0" y="238" style="animation-delay:2.595s"><tspan class="key">Languages.Real</tspan><tspan class="dots"> ................ </tspan><tspan class="value">Greek, English, German</tspan></text>
-    <text class="row" x="0" y="280" style="animation-delay:2.68s"><tspan class="key">Interests.Software</tspan><tspan class="dots"> ............ </tspan><tspan class="value">AI agents, RAG, data viz, automation</tspan></text>
-    <text class="row" x="0" y="304" style="animation-delay:2.765s"><tspan class="key">Interests.Product</tspan><tspan class="dots"> ............. </tspan><tspan class="value">QR menus, web apps, useful tools</tspan></text>
+    <text class="row" x="0" y="100" style="animation-delay:2.17s"><tspan class="key">Recent.Role</tspan><tspan class="dots"> ................... </tspan><tspan class="value">Data Analyst Intern</tspan></text>
+    <text class="row" x="0" y="124" style="animation-delay:2.255s"><tspan class="key">Recent.Company</tspan><tspan class="dots"> ................ </tspan><tspan class="value">TrackSights ApS</tspan></text>
+    <text class="row" x="0" y="148" style="animation-delay:2.34s"><tspan class="key">Recent.Period</tspan><tspan class="dots"> ................. </tspan><tspan class="value">Feb 2026 - Jun 2026</tspan></text>
+    <text class="row" x="0" y="190" style="animation-delay:2.425s"><tspan class="key">Languages.Programming</tspan><tspan class="dots"> ......... </tspan><tspan class="value">Python, TypeScript, JavaScript +6</tspan></text>
+    <text class="row" x="0" y="214" style="animation-delay:2.51s"><tspan class="key">Languages.Web</tspan><tspan class="dots"> ................. </tspan><tspan class="value">React, Next.js, Tailwind CSS +3</tspan></text>
+    <text class="row" x="0" y="238" style="animation-delay:2.595s"><tspan class="key">Stack.Backend</tspan><tspan class="dots"> ................. </tspan><tspan class="value">FastAPI, Node/Express, Django +5</tspan></text>
+    <text class="row" x="0" y="280" style="animation-delay:2.68s"><tspan class="key">Stack.Cloud</tspan><tspan class="dots"> ................... </tspan><tspan class="value">Docker, Terraform, GCP, Firebase +3</tspan></text>
+    <text class="row" x="0" y="304" style="animation-delay:2.765s"><tspan class="key">Stack.AI</tspan><tspan class="dots"> ...................... </tspan><tspan class="value">RAG, LLM APIs, PyTorch +6</tspan></text>
     <text class="row" x="0" y="346" style="animation-delay:2.85s"><tspan class="key">Contact.Website</tspan><tspan class="dots"> ............... </tspan><tspan class="value">dimosthenisgkontolias.com</tspan></text>
-    <text class="row" x="0" y="370" style="animation-delay:2.935s"><tspan class="key">Contact.LinkedIn</tspan><tspan class="dots"> .............. </tspan><tspan class="value">dimosthenisgkontolias</tspan></text>
-    <text class="row" x="0" y="394" style="animation-delay:3.02s"><tspan class="key">Contact.Email</tspan><tspan class="dots"> ................. </tspan><tspan class="value">dimosthenisgkontolias@gmail.com</tspan></text>
+    <text class="row" x="0" y="370" style="animation-delay:2.935s"><tspan class="key">Contact.LinkedIn</tspan><tspan class="dots"> .............. </tspan><tspan class="value">dimosthenis-gkontolias-3024b9349</tspan></text>
+    <text class="row" x="0" y="394" style="animation-delay:3.02s"><tspan class="key">Contact.Email</tspan><tspan class="dots"> ................. </tspan><tspan class="value">dgodolias18@gmail.com</tspan></text>
     <text class="row" x="0" y="436" style="animation-delay:3.105s"><tspan class="key">GitHub.Repos</tspan><tspan class="dots"> .................. </tspan><tspan class="value">33 public non-fork repos</tspan></text>
-    <text class="row" x="0" y="460" style="animation-delay:3.19s"><tspan class="key">GitHub.Contributions</tspan><tspan class="dots"> .......... </tspan><tspan class="value">812 in the last year</tspan></text>
-    <text class="row" x="0" y="484" style="animation-delay:3.275s"><tspan class="key">GitHub.Featured</tspan><tspan class="dots"> ............... </tspan><tspan class="value">QuaR, demosvibes, QR Studio, BoomAI</tspan></text>
+    <text class="row" x="0" y="460" style="animation-delay:3.19s"><tspan class="key">GitHub.Contributions</tspan><tspan class="dots"> .......... </tspan><tspan class="value">1,964 in the last year</tspan></text>
+    <text class="row" x="0" y="484" style="animation-delay:3.275s"><tspan class="key">GitHub.Featured</tspan><tspan class="dots"> ............... </tspan><tspan class="value">Quar.gr, DataViz, Demos Vibes +3</tspan></text>
   </g>
 
   <g class="an-foot">

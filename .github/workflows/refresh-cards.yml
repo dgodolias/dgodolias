@@ -2,15 +2,12 @@ name: refresh cards
 
 # Rebuilds the SVG cards from live GitHub data so the numbers on the profile
 # never go stale. Runs daily, and can be triggered by hand from the Actions tab.
+# Deliberately not triggered on push: the job commits back to this branch, which
+# races with anyone pushing generator changes. Daily plus on-demand is enough.
 on:
   schedule:
     - cron: "17 4 * * *"
   workflow_dispatch:
-  push:
-    paths:
-      - "scripts/**"
-      - "assets/ascii-art.txt"
-      - ".github/workflows/refresh-cards.yml"
 
 permissions:
   contents: write
@@ -59,11 +56,29 @@ jobs:
             }' > data.json
           python -c "import json;d=json.load(open('data.json'));assert d['data']['user']['repositories']['nodes'],'empty payload';print('payload ok')"
 
-      - name: Rebuild cards
+      - name: Fetch website data
+        run: |
+          # dimosthenisgkontolias.com is the single source of truth for the
+          # about copy, projects and skills. Keep the previous payload if the
+          # site is briefly unreachable rather than publishing an empty page.
+          if curl -fsSL --retry 3 --retry-delay 5 --max-time 30 \
+               https://dimosthenisgkontolias.com/profile.json -o site.next.json \
+             && python -c "import json,sys; d=json.load(open('site.next.json')); \
+                  assert d['projects']['featured'] and d['profile']['intro'], 'incomplete payload'"; then
+            mv site.next.json site.json
+            echo "site payload ok"
+          else
+            echo "::warning::could not fetch profile.json; reusing the committed README data"
+            rm -f site.next.json
+            exit 1
+          fi
+
+      - name: Rebuild cards and README
         run: |
           python scripts/gen_contributions.py data.json assets/contributions.svg
-          python scripts/gen_terminal.py data.json assets/ascii-art.txt assets/profile-terminal.svg
-          python scripts/gen_stack.py data.json assets/stack.svg
+          python scripts/gen_terminal.py data.json site.json assets/ascii-art.txt assets/profile-terminal.svg
+          python scripts/gen_stack.py data.json site.json assets/stack.svg
+          python scripts/gen_readme.py site.json README.md
           python - <<'PY'
           import xml.etree.ElementTree as ET, glob
           for f in glob.glob('assets/*.svg'):
@@ -73,13 +88,13 @@ jobs:
 
       - name: Commit if changed
         run: |
-          rm -f data.json
-          if [ -z "$(git status --porcelain assets)" ]; then
-            echo "cards unchanged"
+          rm -f data.json site.json
+          if [ -z "$(git status --porcelain assets README.md)" ]; then
+            echo "nothing changed"
             exit 0
           fi
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets
-          git commit -m "chore: refresh profile cards"
+          git add assets README.md
+          git commit -m "chore: refresh profile from website data"
           git push

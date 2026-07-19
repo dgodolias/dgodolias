@@ -1,37 +1,76 @@
 """Render the neofetch-style profile card as an animated SVG.
 
-Usage: python scripts/gen_terminal.py <data.json> <assets/ascii-art.txt> <out.svg>
+Usage: python scripts/gen_terminal.py <data.json> <site.json> <assets/ascii-art.txt> <out.svg>
 
-Repo and contribution counts come from data.json so the card never goes stale.
+Counts come from the GitHub API (data.json); everything else is read from the
+website's published contract (site.json) so the card cannot drift from the site.
 """
 import json, sys, io
 
-DATA, ART, OUT = sys.argv[1], sys.argv[2], sys.argv[3]
+DATA, SITE, ART, OUT = sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4]
 
 d = json.load(open(DATA, encoding="utf-8"))["data"]["user"]
 total = d["contributionsCollection"]["contributionCalendar"]["totalContributions"]
-repos = d["repositories"]["nodes"]
-n_repos = len(repos)
+n_repos = len(d["repositories"]["nodes"])
+
+site = json.load(open(SITE, encoding="utf-8"))
+p = site["profile"]
+skills = {g["title"]: g["skills"] for g in site["skillGroups"]}
+featured = site["projects"]["featured"]
+jobs = site["experiences"]
 
 ascii_lines = open(ART, encoding="utf-8").read().rstrip("\n").split("\n")
 
+VALUE_BUDGET = 36  # characters that fit in the value column at 15px monospace
+
+
+def fit(items, budget=VALUE_BUDGET):
+    """Join as many items as fit the value column, noting how many were dropped.
+
+    An item that is too long on its own is truncated rather than dropped, so a
+    single long value never collapses to a bare "+1".
+    """
+    if len(items) == 1:
+        only = items[0]
+        return only if len(only) <= budget else only[:budget - 1].rstrip() + "…"
+
+    out, used, skipped = [], 0, 0
+    for item in items:
+        add = len(item) + (2 if out else 0)
+        if used + add <= budget:
+            out.append(item)
+            used += add
+        else:
+            skipped += 1
+    while out and skipped and used + len(f" +{skipped}") > budget:
+        used -= len(out[-1]) + (2 if len(out) > 1 else 0)
+        out.pop()
+        skipped += 1
+    return ", ".join(out) + (f" +{skipped}" if skipped else "")
+
+
+def host(url):
+    return url.split("//")[-1].rstrip("/")
+
+
+recent = jobs[0]
 GROUPS = [
-    [("OS", "Windows, Android, Linux"),
+    [("Location", p["location"]),
      ("Uptime", "GitHub since Jul 2020"),
-     ("Host", "AUEB Informatics + indie builds"),
-     ("Shell", "PowerShell, Bash"),
-     ("IDE", "Cursor, Claude Code, VS Code")],
-    [("Languages.Programming", "Python, TypeScript, Java, C#, SQL"),
-     ("Languages.Web", "React, Next.js, Tailwind, HTML/CSS"),
-     ("Languages.Real", "Greek, English, German")],
-    [("Interests.Software", "AI agents, RAG, data viz, automation"),
-     ("Interests.Product", "QR menus, web apps, useful tools")],
-    [("Contact.Website", "dimosthenisgkontolias.com"),
-     ("Contact.LinkedIn", "dimosthenisgkontolias"),
-     ("Contact.Email", "dimosthenisgkontolias@gmail.com")],
+     ("Recent.Role", fit([recent["role"]])),
+     ("Recent.Company", fit([recent["company"]])),
+     ("Recent.Period", recent["period"])],
+    [("Languages.Programming", fit(skills.get("Languages", []))),
+     ("Languages.Web", fit(skills.get("Frontend", []))),
+     ("Stack.Backend", fit(skills.get("Backend and data", [])))],
+    [("Stack.Cloud", fit(skills.get("Cloud and ops", []))),
+     ("Stack.AI", fit(skills.get("AI and automation", [])))],
+    [("Contact.Website", host(site["site"])),
+     ("Contact.LinkedIn", host(p["linkedinHref"]).replace("www.linkedin.com/in/", "")),
+     ("Contact.Email", p["email"])],
     [("GitHub.Repos", f"{n_repos} public non-fork repos"),
      ("GitHub.Contributions", f"{total:,} in the last year"),
-     ("GitHub.Featured", "QuaR, demosvibes, QR Studio, BoomAI")],
+     ("GitHub.Featured", fit([x["title"] for x in featured]))],
 ]
 
 DOT_COL = 30

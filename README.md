@@ -11,23 +11,17 @@
 <p align="center">
   <a href="https://dimosthenisgkontolias.com/"><b>Website</b></a> &nbsp;·&nbsp;
   <a href="https://dimosthenisgkontolias.com/cv"><b>CV</b></a> &nbsp;·&nbsp;
-  <a href="https://www.linkedin.com/in/dimosthenisgkontolias"><b>LinkedIn</b></a> &nbsp;·&nbsp;
-  <a href="mailto:dimosthenisgkontolias@gmail.com"><b>Email</b></a>
+  <a href="https://www.linkedin.com/in/dimosthenis-gkontolias-3024b9349/"><b>LinkedIn</b></a> &nbsp;·&nbsp;
+  <a href="mailto:dgodolias18@gmail.com"><b>Email</b></a>
 </p>
 
 ---
 
 ### About
 
-Final-year Informatics student at **AUEB** (GPA 9.1/10), building production web apps and AI/data systems.
+EU citizen and final-year Informatics student at AUEB with a 9.1/10 GPA, founder of Quar.gr, Erasmus+ data intern at TrackSights, and creator behind Demos Vibes. My best work sits where code, product sense, data, and distribution meet.
 
-Most recently I was a **Data Analyst Intern at TrackSights** in Copenhagen (Erasmus+), where I built an
-automated data collection system on Google Cloud that gathers official vehicle data across eight European
-markets, plus a machine learning model predicting used-car prices and depreciation rates
-(~785k listings, R² = 0.946).
-
-I like problems where the messy part is real: undocumented data sources, pipelines that have to survive
-unattended, and interfaces that stay simple while the system underneath does not.
+**Open to software engineering or AI/data engineering roles where I can ship, learn fast, and stay close to users.**
 
 ---
 
@@ -41,27 +35,29 @@ unattended, and interfaces that stay simple while the system underneath does not
 
 | Project | What it is | Stack |
 | --- | --- | --- |
-| **[QuaR](https://github.com/dgodolias/QuaR)** | QR menu platform for cafés — admin editing, media management, multilingual menus, analytics | TypeScript |
-| **[demosvibes.gr](https://github.com/dgodolias/demosvibes.gr)** | Greek AI prompts and guides hub, static generation with SEO metadata and JSON-LD | TypeScript |
-| **[QRCodeStyleGen](https://github.com/dgodolias/QRCodeStyleGen)** | Privacy-first QR code style generator — secure logo handling, SVG/PNG export, scannability tests | TypeScript |
-| **[BoomAI](https://github.com/dgodolias/BoomAI)** | AI code-review and auto-fixing CLI for C#/Unity, static analysis plus LLM patch planning | Python |
-| **[torantevoumou](https://github.com/dgodolias/torantevoumou)** | Appointment booking service for professionals | JavaScript |
-| **[dimosthenisgkontolias.com](https://github.com/dgodolias/dimosthenisgkontolias.com)** | This developer's portfolio, built with Next.js | TypeScript |
+| **[Quar.gr](https://quar.gr/)** | A QR menu platform for cafes with admin editing, media management, multilingual menus, and analytics. | React, TypeScript, Fastify, Firebase, GA4 |
+| **[TrackSights OEM data pipeline](https://dimosthenisgkontolias.com/#work)** | Provider-based data collection for official car configurator data and a depreciation model for automotive pricing. | Python, Pydantic, GCP, BigQuery, Dataform |
+| **[DataViz](https://data-viz-one-kappa.vercel.app)** | A full-stack RAG chatbot for economic data exploration with streaming answers and chart generation. | FastAPI, React, TypeScript, Gemini, RAG |
+| **[Demos Vibes](https://demosvibes.gr/)** | A Greek AI tools and workflows channel paired with a static resource hub for every video. | React, TypeScript, Vite SSG, SEO, JSON-LD |
+| **[CSEventFinder](https://dimosthenisgkontolias.com/#work)** | A high-recall tracker for computer science, startup, fintech, AI, developer, conference, and hackathon events in Greece. | Python, FastAPI, SQLite, Vite, TypeScript |
+| **[QR Style Studio](https://github.com/dgodolias/QRCodeStyleGen)** | A client-side QR style generator with custom shapes, frames, logos, export options, and scannability safeguards. | TypeScript, React, SVG, Canvas, CSP |
 
 ---
 
 <details>
-<summary><sub>How these cards are made</sub></summary>
+<summary><sub>How this page builds itself</sub></summary>
 
 <br>
 
-All three cards are plain SVG, generated from the GitHub GraphQL API by
-[`scripts/`](./scripts) and committed to this repo. A daily
-[workflow](./.github/workflows/refresh-cards.yml) re-runs the generators so the
-contribution graph and the counts stay current on their own.
+Everything above is generated. The about copy, the project table and the links come from
+[`https://dimosthenisgkontolias.com/profile.json`](https://dimosthenisgkontolias.com/profile.json) — the same data that renders my website,
+published as a machine-readable contract so the site stays the single source of truth.
+The three cards are plain SVG built from the GitHub GraphQL API by [`scripts/`](./scripts).
 
-No third-party badge or stats services are involved, so nothing here can rate-limit,
-break, or track whoever is reading the page. The animation is CSS and SMIL inside the
-SVG, and it collapses to a static card for anyone browsing with reduced motion enabled.
+A daily [workflow](./.github/workflows/refresh-cards.yml) re-runs the generators, so editing
+the website is enough to update this page. No third-party badge or stats services are
+involved, so nothing here can rate-limit, break, or track whoever is reading it. The
+animation is CSS and SMIL inside the SVG and collapses to a static card under
+`prefers-reduced-motion`.
 
 </details>
