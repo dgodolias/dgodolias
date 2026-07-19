@@ -4,3 +4,7 @@
   </a>
 </p>
 
+
+**Dimosthenis Gkontolias** — final-year Informatics @ AUEB, building production web apps and AI/data systems.
+
+[dimosthenisgkontolias.com](https://dimosthenisgkontolias.com) · [CV](https://dimosthenisgkontolias.com/cv) · [LinkedIn](https://www.linkedin.com/in/dimosthenisgkontolias)
