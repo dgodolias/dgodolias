@@ -19,7 +19,7 @@
 
 ### About
 
-EU citizen and final-year Informatics student at AUEB with a 9.1/10 GPA, founder of Quar.gr, Erasmus+ data intern at TrackSights, and creator behind Demos Vibes. My best work sits where code, product sense, data, and distribution meet.
+EU citizen and Computer Science graduate from AUEB (9.15/10, valedictorian), founder of Quar.gr, former Erasmus+ data intern at TrackSights, and creator behind Demos Vibes. My best work sits where code, product sense, data, and distribution meet.
 
 **Open to software engineering or AI/data engineering roles where I can ship, learn fast, and stay close to users.**
 
