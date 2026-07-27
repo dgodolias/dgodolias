@@ -19,9 +19,9 @@
 
 ### About
 
-EU citizen and Computer Science graduate from AUEB (9.15/10, valedictorian), founder of Quar.gr, former Erasmus+ data intern at TrackSights, and creator behind Demos Vibes. My best work sits where code, product sense, data, and distribution meet.
+AUEB valedictorian, Quar.gr founder, former TrackSights data intern, and creator behind Demos Vibes. I work across AI, product engineering, cloud data, and the last mile that turns a technical system into something people can actually use.
 
-**Open to software engineering or AI/data engineering roles where I can ship, learn fast, and stay close to users.**
+**Open to AI Software Engineer roles where I can ship production features, learn fast, and stay close to users.**
 
 ---
 
@@ -37,7 +37,7 @@ EU citizen and Computer Science graduate from AUEB (9.15/10, valedictorian), fou
 | --- | --- | --- |
 | **[Quar.gr](https://quar.gr/)** | A QR menu platform for cafes with admin editing, media management, multilingual menus, and analytics. | React, TypeScript, Fastify, Firebase, GA4 |
 | **[TrackSights OEM data pipeline](https://dimosthenisgkontolias.com/#work)** | Provider-based data collection for official car configurator data and a depreciation model for automotive pricing. | Python, Pydantic, GCP, BigQuery, Dataform |
-| **[DataViz](https://data-viz-one-kappa.vercel.app)** | A full-stack RAG chatbot for economic data exploration with streaming answers and chart generation. | FastAPI, React, TypeScript, Gemini, RAG |
+| **[TalkToGreekData.gr](https://talktogreekdata.gr/)** | A full-stack RAG product that lets people interrogate Greek economic data in natural language and turn answers into visual evidence. | FastAPI, React, TypeScript, Gemini, RAG |
 | **[Demos Vibes](https://demosvibes.gr/)** | A Greek AI tools and workflows channel paired with a static resource hub for every video. | React, TypeScript, Vite SSG, SEO, JSON-LD |
 | **[CSEventFinder](https://dimosthenisgkontolias.com/#work)** | A high-recall tracker for computer science, startup, fintech, AI, developer, conference, and hackathon events in Greece. | Python, FastAPI, SQLite, Vite, TypeScript |
 | **[QR Style Studio](https://github.com/dgodolias/QRCodeStyleGen)** | A client-side QR style generator with custom shapes, frames, logos, export options, and scannability safeguards. | TypeScript, React, SVG, Canvas, CSP |
