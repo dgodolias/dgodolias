@@ -1,6 +1,6 @@
 <svg width="1320" height="420" viewBox="0 0 1320 420" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-labelledby="t d">
   <title id="t">dgodolias contribution graph</title>
-  <desc id="d">343 contributions in the last year, rendered from the GitHub GraphQL API, with a snake that eats the grid and spells DIMOS.</desc>
+  <desc id="d">344 contributions in the last year, rendered from the GitHub GraphQL API, with a snake that eats the grid and spells DIMOS.</desc>
   <style>
     .caption, .prompt, .cmd, .lab, .foot {
       font-family: "Cascadia Mono", "Consolas", "SF Mono", "Liberation Mono", "DejaVu Sans Mono", monospace;
@@ -449,7 +449,8 @@
     <rect class="cell" x="1217.8" y="269.0" width="17.0" height="17.0" rx="3.5" fill="#161b22" style="animation-delay:1.924s"><title>0 contributions on 2026-07-24</title></rect>
     <rect class="cell" x="1217.8" y="290.8" width="17.0" height="17.0" rx="3.5" fill="#0e4429" style="animation-delay:1.927s"><animate attributeName="fill" dur="21.2s" begin="2.65s" repeatCount="indefinite" calcMode="discrete" values="#0e4429;#161b22;#0e4429;#0e4429" keyTimes="0;0.65815;0.91438;1"/><title>2 contributions on 2026-07-25</title></rect>
     <rect class="cell" x="1239.6" y="160.0" width="17.0" height="17.0" rx="3.5" fill="#0e4429" style="animation-delay:1.918s"><animate attributeName="fill" dur="21.2s" begin="2.65s" repeatCount="indefinite" calcMode="discrete" values="#0e4429;#161b22;#0e4429;#0e4429" keyTimes="0;0.67106;0.91438;1"/><title>7 contributions on 2026-07-26</title></rect>
-    <rect class="cell" x="1239.6" y="181.8" width="17.0" height="17.0" rx="3.5" fill="#161b22" style="animation-delay:1.921s"><title>0 contributions on 2026-07-27</title></rect>
+    <rect class="cell" x="1239.6" y="181.8" width="17.0" height="17.0" rx="3.5" fill="#0e4429" style="animation-delay:1.921s"><animate attributeName="fill" dur="21.2s" begin="2.65s" repeatCount="indefinite" calcMode="discrete" values="#0e4429;#161b22;#0e4429;#0e4429" keyTimes="0;0.6729;0.91438;1"/><title>1 contribution on 2026-07-27</title></rect>
+    <rect class="cell" x="1239.6" y="203.6" width="17.0" height="17.0" rx="3.5" fill="#161b22" style="animation-delay:1.924s"><title>0 contributions on 2026-07-28</title></rect>
   </g>
 
   <g class="stage">
@@ -514,7 +515,7 @@
       </animateMotion>
     </rect>
     <rect x="-7.57" y="-7.57" width="15.13" height="15.13" rx="4.54" fill="#2fb049" opacity="0">
-      <animate attributeName="opacity" dur="21.2s" begin="2.65s" repeatCount="indefinite" calcMode="discrete" values="0;1;0;0" keyTimes="0;0.2286;0.68396;1"/>
+      <animate attributeName="opacity" dur="21.2s" begin="2.65s" repeatCount="indefinite" calcMode="discrete" values="0;1;0;0" keyTimes="0;0.24519;0.68396;1"/>
       <animateMotion dur="21.2s" begin="2.65s" repeatCount="indefinite" rotate="0" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.01844;0.7024;1">
         <mpath xlink:href="#snakepath" href="#snakepath"/>
       </animateMotion>
@@ -526,7 +527,7 @@
       </animateMotion>
     </rect>
     <rect x="-7.38" y="-7.38" width="14.76" height="14.76" rx="4.43" fill="#2ca947" opacity="0">
-      <animate attributeName="opacity" dur="21.2s" begin="2.65s" repeatCount="indefinite" calcMode="discrete" values="0;1;0;0" keyTimes="0;0.28207;0.68396;1"/>
+      <animate attributeName="opacity" dur="21.2s" begin="2.65s" repeatCount="indefinite" calcMode="discrete" values="0;1;0;0" keyTimes="0;0.3005;0.68396;1"/>
       <animateMotion dur="21.2s" begin="2.65s" repeatCount="indefinite" rotate="0" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.02212;0.70608;1">
         <mpath xlink:href="#snakepath" href="#snakepath"/>
       </animateMotion>
@@ -568,7 +569,7 @@
       </animateMotion>
     </rect>
     <rect x="-6.72" y="-6.72" width="13.45" height="13.45" rx="4.03" fill="#259140" opacity="0">
-      <animate attributeName="opacity" dur="21.2s" begin="2.65s" repeatCount="indefinite" calcMode="discrete" values="0;1;0;0" keyTimes="0;0.42955;0.68396;1"/>
+      <animate attributeName="opacity" dur="21.2s" begin="2.65s" repeatCount="indefinite" calcMode="discrete" values="0;1;0;0" keyTimes="0;0.44799;0.68396;1"/>
       <animateMotion dur="21.2s" begin="2.65s" repeatCount="indefinite" rotate="0" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.03503;0.71899;1">
         <mpath xlink:href="#snakepath" href="#snakepath"/>
       </animateMotion>
@@ -598,7 +599,7 @@
       </animateMotion>
     </rect>
     <rect x="-6.26" y="-6.26" width="12.52" height="12.52" rx="3.76" fill="#207f3a" opacity="0">
-      <animate attributeName="opacity" dur="21.2s" begin="2.65s" repeatCount="indefinite" calcMode="discrete" values="0;1;0;0" keyTimes="0;0.47564;0.68396;1"/>
+      <animate attributeName="opacity" dur="21.2s" begin="2.65s" repeatCount="indefinite" calcMode="discrete" values="0;1;0;0" keyTimes="0;0.48117;0.68396;1"/>
       <animateMotion dur="21.2s" begin="2.65s" repeatCount="indefinite" rotate="0" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.04425;0.72821;1">
         <mpath xlink:href="#snakepath" href="#snakepath"/>
       </animateMotion>
@@ -610,7 +611,7 @@
       </animateMotion>
     </rect>
     <rect x="-6.08" y="-6.08" width="12.15" height="12.15" rx="3.65" fill="#1e7838" opacity="0">
-      <animate attributeName="opacity" dur="21.2s" begin="2.65s" repeatCount="indefinite" calcMode="discrete" values="0;1;0;0" keyTimes="0;0.49776;0.68396;1"/>
+      <animate attributeName="opacity" dur="21.2s" begin="2.65s" repeatCount="indefinite" calcMode="discrete" values="0;1;0;0" keyTimes="0;0.49961;0.68396;1"/>
       <animateMotion dur="21.2s" begin="2.65s" repeatCount="indefinite" rotate="0" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.04793;0.73189;1">
         <mpath xlink:href="#snakepath" href="#snakepath"/>
       </animateMotion>
@@ -622,13 +623,13 @@
       </animateMotion>
     </rect>
     <rect x="-5.89" y="-5.89" width="11.78" height="11.78" rx="3.53" fill="#1c7136" opacity="0">
-      <animate attributeName="opacity" dur="21.2s" begin="2.65s" repeatCount="indefinite" calcMode="discrete" values="0;1;0;0" keyTimes="0;0.56782;0.68396;1"/>
+      <animate attributeName="opacity" dur="21.2s" begin="2.65s" repeatCount="indefinite" calcMode="discrete" values="0;1;0;0" keyTimes="0;0.5715;0.68396;1"/>
       <animateMotion dur="21.2s" begin="2.65s" repeatCount="indefinite" rotate="0" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.05162;0.73558;1">
         <mpath xlink:href="#snakepath" href="#snakepath"/>
       </animateMotion>
     </rect>
     <rect x="-5.79" y="-5.79" width="11.59" height="11.59" rx="3.48" fill="#1b6e35" opacity="0">
-      <animate attributeName="opacity" dur="21.2s" begin="2.65s" repeatCount="indefinite" calcMode="discrete" values="0;1;0;0" keyTimes="0;0.57335;0.68396;1"/>
+      <animate attributeName="opacity" dur="21.2s" begin="2.65s" repeatCount="indefinite" calcMode="discrete" values="0;1;0;0" keyTimes="0;0.57519;0.68396;1"/>
       <animateMotion dur="21.2s" begin="2.65s" repeatCount="indefinite" rotate="0" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.05346;0.73742;1">
         <mpath xlink:href="#snakepath" href="#snakepath"/>
       </animateMotion>
@@ -640,7 +641,7 @@
       </animateMotion>
     </rect>
     <rect x="-5.61" y="-5.61" width="11.22" height="11.22" rx="3.37" fill="#186733" opacity="0">
-      <animate attributeName="opacity" dur="21.2s" begin="2.65s" repeatCount="indefinite" calcMode="discrete" values="0;1;0;0" keyTimes="0;0.58257;0.68396;1"/>
+      <animate attributeName="opacity" dur="21.2s" begin="2.65s" repeatCount="indefinite" calcMode="discrete" values="0;1;0;0" keyTimes="0;0.58625;0.68396;1"/>
       <animateMotion dur="21.2s" begin="2.65s" repeatCount="indefinite" rotate="0" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.05715;0.74111;1">
         <mpath xlink:href="#snakepath" href="#snakepath"/>
       </animateMotion>
@@ -652,7 +653,7 @@
       </animateMotion>
     </rect>
     <rect x="-5.42" y="-5.42" width="10.84" height="10.84" rx="3.25" fill="#166031" opacity="0">
-      <animate attributeName="opacity" dur="21.2s" begin="2.65s" repeatCount="indefinite" calcMode="discrete" values="0;1;0;0" keyTimes="0;0.59916;0.68396;1"/>
+      <animate attributeName="opacity" dur="21.2s" begin="2.65s" repeatCount="indefinite" calcMode="discrete" values="0;1;0;0" keyTimes="0;0.601;0.68396;1"/>
       <animateMotion dur="21.2s" begin="2.65s" repeatCount="indefinite" rotate="0" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.06084;0.7448;1">
         <mpath xlink:href="#snakepath" href="#snakepath"/>
       </animateMotion>
@@ -670,25 +671,25 @@
       </animateMotion>
     </rect>
     <rect x="-5.14" y="-5.14" width="10.28" height="10.28" rx="3.08" fill="#13552e" opacity="0">
-      <animate attributeName="opacity" dur="21.2s" begin="2.65s" repeatCount="indefinite" calcMode="discrete" values="0;1;0;0" keyTimes="0;0.60838;0.68396;1"/>
+      <animate attributeName="opacity" dur="21.2s" begin="2.65s" repeatCount="indefinite" calcMode="discrete" values="0;1;0;0" keyTimes="0;0.61022;0.68396;1"/>
       <animateMotion dur="21.2s" begin="2.65s" repeatCount="indefinite" rotate="0" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.06637;0.75033;1">
         <mpath xlink:href="#snakepath" href="#snakepath"/>
       </animateMotion>
     </rect>
     <rect x="-5.05" y="-5.05" width="10.1" height="10.1" rx="3.03" fill="#12522d" opacity="0">
-      <animate attributeName="opacity" dur="21.2s" begin="2.65s" repeatCount="indefinite" calcMode="discrete" values="0;1;0;0" keyTimes="0;0.61944;0.68396;1"/>
+      <animate attributeName="opacity" dur="21.2s" begin="2.65s" repeatCount="indefinite" calcMode="discrete" values="0;1;0;0" keyTimes="0;0.62312;0.68396;1"/>
       <animateMotion dur="21.2s" begin="2.65s" repeatCount="indefinite" rotate="0" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.06821;0.75217;1">
         <mpath xlink:href="#snakepath" href="#snakepath"/>
       </animateMotion>
     </rect>
     <rect x="-4.96" y="-4.96" width="9.91" height="9.91" rx="2.97" fill="#114e2c" opacity="0">
-      <animate attributeName="opacity" dur="21.2s" begin="2.65s" repeatCount="indefinite" calcMode="discrete" values="0;1;0;0" keyTimes="0;0.64525;0.68396;1"/>
+      <animate attributeName="opacity" dur="21.2s" begin="2.65s" repeatCount="indefinite" calcMode="discrete" values="0;1;0;0" keyTimes="0;0.65078;0.68396;1"/>
       <animateMotion dur="21.2s" begin="2.65s" repeatCount="indefinite" rotate="0" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.07006;0.75402;1">
         <mpath xlink:href="#snakepath" href="#snakepath"/>
       </animateMotion>
     </rect>
     <rect x="-4.86" y="-4.86" width="9.72" height="9.72" rx="2.92" fill="#104b2b" opacity="0">
-      <animate attributeName="opacity" dur="21.2s" begin="2.65s" repeatCount="indefinite" calcMode="discrete" values="0;1;0;0" keyTimes="0;0.65447;0.68396;1"/>
+      <animate attributeName="opacity" dur="21.2s" begin="2.65s" repeatCount="indefinite" calcMode="discrete" values="0;1;0;0" keyTimes="0;0.65815;0.68396;1"/>
       <animateMotion dur="21.2s" begin="2.65s" repeatCount="indefinite" rotate="0" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.0719;0.75586;1">
         <mpath xlink:href="#snakepath" href="#snakepath"/>
       </animateMotion>
@@ -700,7 +701,7 @@
       </animateMotion>
     </rect>
     <rect x="-4.67" y="-4.67" width="9.35" height="9.35" rx="2.8" fill="#0e4429" opacity="0">
-      <animate attributeName="opacity" dur="21.2s" begin="2.65s" repeatCount="indefinite" calcMode="discrete" values="0;1;0;0" keyTimes="0;0.67106;0.68396;1"/>
+      <animate attributeName="opacity" dur="21.2s" begin="2.65s" repeatCount="indefinite" calcMode="discrete" values="0;1;0;0" keyTimes="0;0.6729;0.68396;1"/>
       <animateMotion dur="21.2s" begin="2.65s" repeatCount="indefinite" rotate="0" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.07559;0.75955;1">
         <mpath xlink:href="#snakepath" href="#snakepath"/>
       </animateMotion>
@@ -986,7 +987,7 @@
   </g>
 
   <g class="an-foot">
-    <text class="foot" x="60" y="352"><tspan class="foot-hi">343</tspan> contributions in the last year</text>
+    <text class="foot" x="60" y="352"><tspan class="foot-hi">344</tspan> contributions in the last year</text>
     <text class="lab" x="1094.0" y="352">Less</text>
     <rect x="1128.0" y="342" width="14.0" height="14.0" rx="3" fill="#161b22" stroke="#f0f6fc" stroke-opacity=".05"/>
     <rect x="1146.0" y="342" width="14.0" height="14.0" rx="3" fill="#0e4429" stroke="#f0f6fc" stroke-opacity=".05"/>
