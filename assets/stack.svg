@@ -67,13 +67,13 @@
     <rect class="grow" x="210" y="193" width="0" height="12" rx="6" fill="#3572A5">
       <animate attributeName="width" from="0" to="350.0" dur=".85s" begin="1.92s" fill="freeze" calcMode="spline" keySplines="0.2 0.7 0.3 1" keyTimes="0;1"/>
     </rect>
-    <text class="val" x="574" y="205">9 repos</text>
+    <text class="val" x="574" y="205">10 repos</text>
   </g>
   <g class="item" style="animation-delay:1.91s">
     <text class="lab" x="60" y="244">TypeScript</text>
     <rect class="track" x="210" y="231" width="350" height="12" rx="6"/>
     <rect class="grow" x="210" y="231" width="0" height="12" rx="6" fill="#3178c6">
-      <animate attributeName="width" from="0" to="272.2" dur=".85s" begin="2.01s" fill="freeze" calcMode="spline" keySplines="0.2 0.7 0.3 1" keyTimes="0;1"/>
+      <animate attributeName="width" from="0" to="245.0" dur=".85s" begin="2.01s" fill="freeze" calcMode="spline" keySplines="0.2 0.7 0.3 1" keyTimes="0;1"/>
     </rect>
     <text class="val" x="574" y="243">7 repos</text>
   </g>
@@ -81,7 +81,7 @@
     <text class="lab" x="60" y="282">HTML</text>
     <rect class="track" x="210" y="269" width="350" height="12" rx="6"/>
     <rect class="grow" x="210" y="269" width="0" height="12" rx="6" fill="#e34c26">
-      <animate attributeName="width" from="0" to="155.6" dur=".85s" begin="2.1s" fill="freeze" calcMode="spline" keySplines="0.2 0.7 0.3 1" keyTimes="0;1"/>
+      <animate attributeName="width" from="0" to="140.0" dur=".85s" begin="2.1s" fill="freeze" calcMode="spline" keySplines="0.2 0.7 0.3 1" keyTimes="0;1"/>
     </rect>
     <text class="val" x="574" y="281">4 repos</text>
   </g>
@@ -89,7 +89,7 @@
     <text class="lab" x="60" y="320">Java</text>
     <rect class="track" x="210" y="307" width="350" height="12" rx="6"/>
     <rect class="grow" x="210" y="307" width="0" height="12" rx="6" fill="#b07219">
-      <animate attributeName="width" from="0" to="116.7" dur=".85s" begin="2.19s" fill="freeze" calcMode="spline" keySplines="0.2 0.7 0.3 1" keyTimes="0;1"/>
+      <animate attributeName="width" from="0" to="105.0" dur=".85s" begin="2.19s" fill="freeze" calcMode="spline" keySplines="0.2 0.7 0.3 1" keyTimes="0;1"/>
     </rect>
     <text class="val" x="574" y="319">3 repos</text>
   </g>
@@ -97,7 +97,7 @@
     <text class="lab" x="60" y="358">JavaScript</text>
     <rect class="track" x="210" y="345" width="350" height="12" rx="6"/>
     <rect class="grow" x="210" y="345" width="0" height="12" rx="6" fill="#f1e05a">
-      <animate attributeName="width" from="0" to="77.8" dur=".85s" begin="2.28s" fill="freeze" calcMode="spline" keySplines="0.2 0.7 0.3 1" keyTimes="0;1"/>
+      <animate attributeName="width" from="0" to="70.0" dur=".85s" begin="2.28s" fill="freeze" calcMode="spline" keySplines="0.2 0.7 0.3 1" keyTimes="0;1"/>
     </rect>
     <text class="val" x="574" y="357">2 repos</text>
   </g>
@@ -105,7 +105,7 @@
     <text class="lab" x="60" y="396">CSS</text>
     <rect class="track" x="210" y="383" width="350" height="12" rx="6"/>
     <rect class="grow" x="210" y="383" width="0" height="12" rx="6" fill="#663399">
-      <animate attributeName="width" from="0" to="77.8" dur=".85s" begin="2.37s" fill="freeze" calcMode="spline" keySplines="0.2 0.7 0.3 1" keyTimes="0;1"/>
+      <animate attributeName="width" from="0" to="70.0" dur=".85s" begin="2.37s" fill="freeze" calcMode="spline" keySplines="0.2 0.7 0.3 1" keyTimes="0;1"/>
     </rect>
     <text class="val" x="574" y="395">2 repos</text>
   </g>
@@ -237,7 +237,7 @@
   </g>
   <g class="item" style="animation-delay:3.49s">
     <line x1="60" y1="512" x2="1262" y2="512" stroke="#8b949e" stroke-width="1" opacity=".3"/>
-    <text class="foot" x="60" y="534"><tspan class="foot-hi">32</tspan> public repos<tspan opacity=".5">  &#183;  </tspan><tspan class="foot-hi">340</tspan> contributions in the last year<tspan opacity=".5">  &#183;  </tspan>skills mirrored from <tspan class="foot-hi">dimosthenisgkontolias.com</tspan></text>
+    <text class="foot" x="60" y="534"><tspan class="foot-hi">33</tspan> public repos<tspan opacity=".5">  &#183;  </tspan><tspan class="foot-hi">342</tspan> contributions in the last year<tspan opacity=".5">  &#183;  </tspan>skills mirrored from <tspan class="foot-hi">dimosthenisgkontolias.com</tspan></text>
     <text class="foot" x="1262" y="534" text-anchor="end">no third-party trackers</text>
   </g>
 </svg>
