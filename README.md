@@ -37,7 +37,6 @@ AUEB valedictorian, Quar.gr founder, former TrackSights data intern, and creator
 | --- | --- | --- |
 | **[Quar.gr](https://quar.gr/)** | A QR menu platform for cafes with admin editing, media management, multilingual menus, and analytics. | React, TypeScript, Fastify, Firebase, GA4 |
 | **[TrackSights OEM data pipeline](https://dimosthenisgkontolias.com/#work)** | Provider-based data collection for official car configurator data and a depreciation model for automotive pricing. | Python, Pydantic, GCP, BigQuery, Dataform |
-| **[TalkToGreekData.gr](https://talktogreekdata.gr/)** | A full-stack RAG product that lets people interrogate Greek economic data in natural language and turn answers into visual evidence. | FastAPI, React, TypeScript, Gemini, RAG |
 | **[Demos Vibes](https://demosvibes.gr/)** | A Greek AI tools and workflows channel paired with a static resource hub for every video. | React, TypeScript, Vite SSG, SEO, JSON-LD |
 | **[CSEventFinder](https://dimosthenisgkontolias.com/#work)** | A high-recall tracker for computer science, startup, fintech, AI, developer, conference, and hackathon events in Greece. | Python, FastAPI, SQLite, Vite, TypeScript |
 | **[QR Style Studio](https://github.com/dgodolias/QRCodeStyleGen)** | A client-side QR style generator with custom shapes, frames, logos, export options, and scannability safeguards. | TypeScript, React, SVG, Canvas, CSP |
